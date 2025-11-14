@@ -8,7 +8,7 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <BrowserRouter>
+    <BrowserRouter basename="/Kousthubam-grand-suites">
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/booking" element={<Booking />} />
