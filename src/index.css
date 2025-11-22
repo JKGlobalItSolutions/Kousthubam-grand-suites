@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 240 25% 6%;
+    --background-end: 240 43% 10%;
+    --foreground: 43 68% 93%;
+
+    --card: 240 30% 8%;
+    --card-foreground: 43 68% 93%;
+
+    --popover: 240 30% 8%;
+    --popover-foreground: 43 68% 93%;
+
+    --primary: 262 84% 47%;
+    --primary-glow: 257 100% 44%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 30% 15%;
+    --secondary-foreground: 43 68% 93%;
+
+    --muted: 240 20% 20%;
+    --muted-foreground: 43 20% 65%;
+
+    --accent: 262 84% 47%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 20% 20%;
+    --input: 240 20% 20%;
+    --ring: 262 84% 47%;
+
+    --radius: 0.5rem;
+
+    /* Custom gradients */
+    --gradient-purple-gold: linear-gradient(135deg, hsl(274, 70%, 53%), hsl(257, 100%, 44%), hsl(43, 68%, 53%));
+    --gradient-dark: linear-gradient(180deg, hsl(240, 25%, 6%), hsl(240, 43%, 10%));
+    --glow-purple: 0 0 40px hsl(274 70% 53% / 0.3);
+    --glow-gold: 0 0 40px hsl(43 68% 53% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply text-foreground;
+    background: linear-gradient(180deg, hsl(var(--background)), hsl(var(--background-end)));
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    background: var(--gradient-purple-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-purple {
+    box-shadow: var(--glow-purple);
+  }
+
+  .glow-gold {
+    box-shadow: var(--glow-gold);
+  }
+
+  .hover-glow-purple {
+    transition: all 0.3s ease;
+  }
+
+  .hover-glow-purple:hover {
+    box-shadow: var(--glow-purple);
+    transform: translateY(-2px);
+  }
+
+  .hover-glow-gold {
+    transition: all 0.3s ease;
+  }
+
+  .hover-glow-gold:hover {
+    box-shadow: var(--glow-gold);
+    transform: translateY(-2px);
+  }
+}
