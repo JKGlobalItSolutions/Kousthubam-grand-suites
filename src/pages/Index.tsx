@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import { toast } from "sonner";
 import { X } from "lucide-react";
-import {FaMapSigns, FaTaxi, FaWifi, FaParking, FaSnowflake, FaUtensils, FaCoffee, FaDumbbell, FaSwimmingPool, FaConciergeBell, FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import {FaMapSigns,FaBuilding,FaMotorcycle, FaTaxi, FaWifi, FaParking, FaSnowflake, FaUtensils, FaCoffee, FaDumbbell, FaSwimmingPool, FaConciergeBell, FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import logo from "/public/kk.jpg";
+
 import hero1 from "@/assets/hero-1.jpeg";
 import hero2 from "@/assets/hero-2.jpeg";
 import hero3 from "@/assets/presidential-balcony.jpg";
@@ -146,6 +148,17 @@ const Index = () => {
               className="text-2xl font-bold gradient-text cursor-pointer"
               onClick={() => scrollToSection("hero")}
             >
+               <img
+    src={logo}
+    alt="DJ Palace Logo "
+    className="w-10 h-10 rounded-full"   // SMALLER LOGO
+  />
+
+  {/* Logo Text */}
+  <span className="text-xl font-bold text-yellow-500 tracking-wide">
+    DJ PALACE
+  </span>
+  
               Kousthubam Grand Suites
             </motion.div>
 
@@ -419,7 +432,7 @@ const Index = () => {
         id: 1,
         name: "luxury Room with Balcony",
         images: [deluxeBalcony, deluxeBalcony2, deluxeBalcony3, deluxeBalcony4, deluxeBalcony5],
-        price: "₹4,500",
+        price: "₹3,000",
         description: "Spacious room with king-size bed, modern amenities, and a private balcony with city views.",
         features: ["King Bed", "Balcony", "AC", "Wi-Fi", "TV", "Mini Bar"],
       },
@@ -427,15 +440,15 @@ const Index = () => {
         id: 2,
         name: "Executive Suite with Balcony",
         images: [executiveBalcony, executiveBalcony2, executiveBalcony3, executiveBalcony4, executiveBalcony5],
-        price: "₹6,500",
+        price: "₹3,000",
         description: "Premium suite with separate living area, work desk, and stunning panoramic balcony views.",
         features: ["Queen Bed", "Balcony", "Living Area", "Work Desk", "Premium Amenities"],
       },
       {
         id: 3,
-        name: "Family Suite with Balcony",
+        name: "Party Hall",
         images: [familyBalcony, familyBalcony2, familyBalcony3, familyBalcony4, familyBalcony5],
-        price: "₹8,000",
+        price: "₹1,000",
         description: "Perfect for families with multiple rooms, spacious layout, and a large private balcony.",
         features: ["2 Bedrooms", "Balcony", "Living Room", "Kitchenette", "Family Friendly"],
       },
@@ -550,6 +563,9 @@ const Index = () => {
       { icon: FaMapSigns, title: "Guide Available", description: "Experienced guides available for local sightseeing." },
       { icon: FaCoffee, title: "Coffee Day", description: "Coffee Day Coffee Available not Cafe" },
       { icon: FaTaxi, title: "Cab Available", description: "24/7 Cab available" },
+      { icon: FaBuilding, title: "Decorative Hall", description: "Spacious hall for events & parties" },
+      { icon: FaMotorcycle, title: "Rental Bike", description: "Bike rental available" }
+
     ];
 
     return (
