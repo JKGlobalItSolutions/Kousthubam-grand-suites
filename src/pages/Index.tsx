@@ -4,7 +4,7 @@ import { AnimatePresence, motion, useInView } from "framer-motion";
 import { toast } from "sonner";
 import { X } from "lucide-react";
 import {FaMapSigns,FaBuilding,FaMotorcycle, FaTaxi, FaWifi, FaParking, FaSnowflake, FaUtensils, FaCoffee, FaDumbbell, FaSwimmingPool, FaConciergeBell, FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
-import logo from "/public/kk.jpg";
+import logo from "/kk.jpeg";
 
 import hero1 from "@/assets/hero-1.jpeg";
 import hero2 from "@/assets/hero-2.jpeg";
@@ -145,22 +145,17 @@ const Index = () => {
           <div className="flex items-center justify-between py-4">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="text-2xl font-bold gradient-text cursor-pointer"
+              className="flex items-center gap-3 cursor-pointer"
               onClick={() => scrollToSection("hero")}
             >
                <img
     src={logo}
-    alt="DJ Palace Logo "
-    className="w-10 h-10 rounded-full"   // SMALLER LOGO
+    alt="Kousthubam Grand Suites Logo"
+    className="w-10 h-10 rounded-full"
   />
-
-  {/* Logo Text */}
   <span className="text-xl font-bold text-yellow-500 tracking-wide">
-    DJ PALACE
-  </span>
-  
-              Kousthubam Grand Suites
-            </motion.div>
+  Kousthubam Grand Suites</span>
+              </motion.div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-6">
@@ -174,22 +169,24 @@ const Index = () => {
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full" />
                 </button>
               ))}
-              <button
-                onClick={() => scrollToSection("rooms")}
-                className="w-full  text-primary-foreground hover-glow-purple px-4 py-2 rounded-md transition-all duration-300"
-                // style={{backgroundColor:"#9234DB"}}
+              <a
+                href="https://jkglobalitsolutions.github.io/kousthubam-website-dynamic-link/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full  text-primary-foreground hover-glow-purple px-4 py-2 rounded-md transition-all duration-300 inline-block text-center"
                 style={{
     backgroundColor: "#5E13DE",
     color: "#fff",
     padding: "10px 20px",
     border: "none",
     borderRadius: "6px",
+    textDecoration: "none"
   }}
   onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#7427FF")}
   onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#5E13DE")}
               >
                 Book Now
-              </button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -239,21 +236,24 @@ const Index = () => {
                   {item.label}
                 </button>
               ))}
-              <button
-                onClick={() => scrollToSection("rooms")}
-                className="w-full  text-primary-foreground hover-glow-purple px-4 py-2 rounded-md transition-all duration-300"
+              <a
+                href="https://jkglobalitsolutions.github.io/kousthubam-website-dynamic-link/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full  text-primary-foreground hover-glow-purple px-4 py-2 rounded-md transition-all duration-300 inline-block text-center"
                 style={{
     backgroundColor: "#5E13DE",
     color: "#fff",
     padding: "10px 20px",
     border: "none",
     borderRadius: "6px",
+    textDecoration: "none"
   }}
   onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#7427FF")}
   onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#5E13DE")}
               >
                 Book Now
-              </button>
+              </a>
             </motion.div>
           )}
         </div>
@@ -526,21 +526,24 @@ const Index = () => {
                         </span>
                       ))}
                     </div>
-                    <button
-                      onClick={() => navigate('/booking')}
-                      className="w-full text-primary-foreground hover-glow-purple px-4 py-2 rounded-md transition-all duration-300"
+                    <a
+                      href="https://jkglobalitsolutions.github.io/kousthubam-website-dynamic-link/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full text-primary-foreground hover-glow-purple px-4 py-2 rounded-md transition-all duration-300 inline-block text-center"
                       style={{
     backgroundColor: "#5E13DE",
     color: "#fff",
     padding: "10px 20px",
     border: "none",
     borderRadius: "6px",
+    textDecoration: "none"
   }}
   onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#7427FF")}
   onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#5E13DE")}
                     >
                       Book Now
-                    </button>
+                    </a>
                   </div>
                 </div>
               </motion.div>
