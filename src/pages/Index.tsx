@@ -19,8 +19,8 @@ import executiveBalcony2 from "@/assets/executive-balcony-2.jpeg";
 import executiveBalcony3 from "@/assets/executive-balcony-3.jpeg";
 import executiveBalcony4 from "@/assets/executive-balcony-4.jpeg";
 import executiveBalcony5 from "@/assets/executive-balcony-5.jpg";
-import familyBalcony from "@/assets/family-balcony.jpg";
-import familyBalcony2 from "@/assets/family-balcony-2.jpg";
+import familyBalcony from "@/assets/family-balcony-2.jpg";
+import familyBalcony2 from "@/assets/family-balcony.jpg";
 import familyBalcony3 from "@/assets/family-balcony-3.jpg";
 import familyBalcony4 from "@/assets/family-balcony-4.jpg";
 import familyBalcony5 from "@/assets/family-balcony-5.jpg";
@@ -434,7 +434,7 @@ const Index = () => {
         images: [deluxeBalcony, deluxeBalcony2, deluxeBalcony3, deluxeBalcony4, deluxeBalcony5],
         price: "₹3,000",
         description: "Spacious room with king-size bed, modern amenities, and a private balcony with city views.",
-        features: ["King Bed", "Balcony", "AC", "Wi-Fi", "TV", "Mini Bar"],
+        features: ["King Bed", "Balcony", "AC", "Wi-Fi",],
       },
       {
         id: 2,
@@ -447,7 +447,7 @@ const Index = () => {
       {
         id: 3,
         name: "Party Hall",
-        images: [familyBalcony, familyBalcony2, familyBalcony3, familyBalcony4, familyBalcony5],
+        images: [familyBalcony, familyBalcony2, familyBalcony3, familyBalcony4,],
         price: "₹1,000",
         description: "Perfect for families with multiple rooms, spacious layout, and a large private balcony.",
         features: ["2 Bedrooms", "Balcony", "Living Room", "Kitchenette", "Family Friendly"],
@@ -851,7 +851,7 @@ const Index = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-2">Phone</h3>
                     <p className="text-muted-foreground">
                       +91 8248804817<br />
-                      +91 8667646584
+                      +91 7305457297
                     </p>
                   </div>
                 </div>
