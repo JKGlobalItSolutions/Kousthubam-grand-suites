@@ -656,14 +656,14 @@ const Index = () => {
       {
         id: 4,
         name: "Sathanur Dam",
-        distance: "18 km",
+        distance: "29 km",
         description: "Beautiful reservoir with scenic views, perfect for picnics and nature photography.",
         highlights: ["Scenic beauty", "Water activities", "Photography"],
       },
       {
         id: 4,
         name: "Yogi Ram Suratkumar Ashram",
-        distance: "18 km",
+        distance: "500 m",
         description: "Yogi Ramsuratkumar Ashram, Tiruvannamalai: a peaceful spiritual refuge dedicated to the saint Yogi Ramsuratkumar, offering meditation, devotional gatherings, and selfless seva.",
         highlights: ["Peace", "Free food", "Temple", "spiritual devotees", "Mountain View"],
       },
