@@ -23,7 +23,9 @@ import familyBalcony from "@/assets/family-balcony-2.jpg";
 import familyBalcony2 from "@/assets/family-balcony.jpg";
 import familyBalcony3 from "@/assets/family-balcony-3.jpg";
 import familyBalcony4 from "@/assets/family-balcony-4.jpg";
-import familyBalcony5 from "@/assets/family-balcony-5.jpg";
+import familyBalcony5 from "@/assets/family-balcony-5.jpeg";
+import familyBalcony6 from "@/assets/family-balcony-6.jpeg";
+import familyBalcony7 from "@/assets/family-balcony-7.jpeg";
 import presidentialBalcony from "@/assets/presidential-balcony.jpg";
 import presidentialBalcony2 from "@/assets/presidential-balcony-2.jpg";
 import presidentialBalcony3 from "@/assets/presidential-balcony-3.jpg";
@@ -392,7 +394,7 @@ const Index = () => {
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     return (
-      <section className="py-20 px-4">
+      <section className="py-20 pb-6 px-18">
         <div className="container mx-auto max-w-4xl">
           <motion.div
             ref={ref}
@@ -410,7 +412,7 @@ const Index = () => {
               accommodations are designed to provide guests with an unforgettable experience,
               combining elegant interiors with world-class amenities.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-1 leading-relaxed">
               Whether you're visiting for spiritual enlightenment, business, or leisure, our
               dedicated team ensures every moment of your stay is filled with comfort and
               sophistication. Experience the perfect harmony of luxury and serenity at
@@ -434,7 +436,7 @@ const Index = () => {
         images: [deluxeBalcony, deluxeBalcony2, deluxeBalcony3, deluxeBalcony4, deluxeBalcony5],
         price: "₹3,000",
         description: "Spacious room with king-size bed, modern amenities, and a private balcony with city views.",
-        features: ["King Bed", "Balcony", "AC", "Wi-Fi",],
+        features: ["King Bed", "Balcony", "AC", "Wi-Fi","Seating Arrangement"],
       },
       {
         id: 2,
@@ -447,10 +449,10 @@ const Index = () => {
       {
         id: 3,
         name: "Party Hall",
-        images: [familyBalcony, familyBalcony2, familyBalcony3, familyBalcony4,],
+        images: [familyBalcony, familyBalcony2, familyBalcony3, familyBalcony4, familyBalcony5, familyBalcony6, familyBalcony7],
         price: "₹1,000",
-        description: "Perfect for families with multiple rooms, spacious layout, and a large private balcony.",
-        features: ["2 Bedrooms", "Balcony", "Living Room", "Kitchenette", "Family Friendly"],
+        description: "Reserve our best party hall venue offering comfort, convenience, and excellent service.",
+        features: ["spacious hall", "wedding venue", "Family Friendly","best party hall in city"],
       },
       // {
       //   id: 4,
@@ -672,15 +674,16 @@ const Index = () => {
     return (
       <section id="tours" className="py-20 px-4">
         <div className="container mx-auto">
-          <motion.div
+          <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-16 py-2"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+           
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text leading-tight">
               Nearby Attractions
-            </h2>
+            </h2> 
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Explore the spiritual and natural wonders around Tiruvannamalai during your stay.
             </p>
@@ -732,6 +735,7 @@ const Index = () => {
     const images = [
       hero1,
       hero2,
+      familyBalcony5,familyBalcony6,familyBalcony7,
       deluxeBalcony,
       executiveBalcony,
       familyBalcony,

@@ -66,6 +66,10 @@ All colors MUST be HSL.
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+
+     line-height: 1.25;
+    padding-bottom: 0.18em;
+      display: inline-block;
   }
 
   .glow-purple {
